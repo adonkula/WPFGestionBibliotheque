@@ -1,0 +1,333 @@
+﻿<Window x:Class="Sommatif2GestionBibliotheque.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Gestion de la bibliothèque"
+        Height="783" Width="1293"
+        Background="{StaticResource Brush.Bg}">
+
+    <!-- GRID PRINCIPAL : LIGNE 0 = LANGUE, LIGNE 1 = ONGLETS -->
+    <Grid Margin="{StaticResource Space.SM}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- barre langue -->
+            <RowDefinition Height="*"/>
+            <!-- TabControl -->
+            <RowDefinition Height="Auto"/>
+            <!-- StatusBar -->
+        </Grid.RowDefinitions>
+
+        <!-- === MENU LANGUE EN HAUT À DROITE === -->
+        <StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,0,8">
+            <TextBlock Text="{DynamicResource Lbl_Language}" 
+                       VerticalAlignment="Center" Margin="0,0,8,0"/>
+            <ComboBox x:Name="cbLang" Width="120" SelectionChanged="cbLang_SelectionChanged">
+                <ComboBoxItem Content="Français" Tag="fr"/>
+                <ComboBoxItem Content="English" Tag="en"/>
+            </ComboBox>
+        </StackPanel>
+
+        <!-- === TOUS LES ONGLETS === -->
+        <TabControl x:Name="MainTabControl" Grid.Row="1">
+
+            <!-- ==================== DÉTAILS LIVRES ==================== -->
+            <TabItem Header="{DynamicResource Tab_DetailLivres}" x:Name="tabCatalogue">
+                <Grid Margin="{StaticResource Space.SM}">
+                    <Border Style="{StaticResource Card}">
+                        <DataGrid x:Name="dgCatalogue"
+                                  AutoGenerateColumns="False"
+                                  IsReadOnly="True"
+                                  CanUserAddRows="False"
+                                  CanUserDeleteRows="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_Title}"
+                                                    Binding="{Binding Titre}" Width="2*"/>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_Author}"
+                                                    Binding="{Binding Auteur}" Width="2*"/>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_Category}"
+                                                    Binding="{Binding Categories}" Width="2*"/>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_ISBN}"
+                                                    Binding="{Binding ISBN}" Width="*"/>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_PubDate}"
+                                                    Binding="{Binding DatePublication}" Width="*"/>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_PageCount}"
+                                                    Binding="{Binding NombrePages}" Width="*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+                </Grid>
+            </TabItem>
+
+            <!-- ==================== LIVRES ==================== -->
+            <TabItem Header="{DynamicResource Tab_Livres}" x:Name="tabLivres">
+                <Grid Margin="{StaticResource Space.SM}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- FORMULAIRE LIVRE -->
+                    <Border Grid.Row="0" Style="{StaticResource Card}">
+                        <StackPanel Orientation="Vertical">
+                            <!-- Ligne 1 : Titre + Auteur (ComboBox) -->
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="{DynamicResource Lbl_Title}" Width="120"/>
+                                <TextBox x:Name="tbTitreLiv" Width="260"/>
+
+                                <Label Content="{DynamicResource Lbl_Author}" Width="120" Margin="16,0,8,0"/>
+                                <ComboBox x:Name="cbAuteurLiv"
+                                          Width="260"
+                                          DisplayMemberPath="NomComplet"
+                                          SelectedValuePath="Id"/>
+                            </StackPanel>
+
+                            <!-- Ligne 2 : Catégories + ISBN -->
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="{DynamicResource Lbl_Category}" Width="120"/>
+                                <ListBox x:Name="lbCategoriesLiv"
+                                         Width="260"
+                                         Height="80"
+                                         SelectionMode="Multiple"
+                                         DisplayMemberPath="Nom"
+                                         SelectedValuePath="Id"/>
+                                <Label Content="{DynamicResource Lbl_ISBN}" Width="120" Margin="16,0,8,0"/>
+                                <TextBox x:Name="tbIsbnLiv" Width="260"/>
+                            </StackPanel>
+
+                            <!-- Ligne 3 : Date + Pages -->
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="{DynamicResource Lbl_PubDate}" Width="120"/>
+                                <TextBox x:Name="tbDatePubLiv" Width="260"/>
+                                <Label Content="{DynamicResource Lbl_PageCount}" Width="120" Margin="16,0,8,0"/>
+                                <TextBox x:Name="tbNbrLiv" Width="120"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- TABLEAU DES LIVRES -->
+                    <Border Grid.Row="1" Style="{StaticResource Card}">
+                        <DataGrid x:Name="dgLivres"
+                                  AutoGenerateColumns="False"
+                                  CanUserAddRows="False"
+                                  CanUserDeleteRows="False"
+                                  IsReadOnly="True"
+                                  SelectionMode="Single"
+                                  SelectionChanged="dgLivres_SelectionChanged">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_Title}"
+                                                    Binding="{Binding Titre}"
+                                                    Width="2*"/>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_Author}"
+                                                    Binding="{Binding Auteur.NomComplet}"
+                                                    Width="2*"/>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_Category}"
+                                                    Binding="{Binding CategoriesConcat}"
+                                                    Width="*"/>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_ISBN}"
+                                                    Binding="{Binding DetailsLivre.ISBN}"
+                                                    Width="*"/>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_PubDate}"
+                                                    Binding="{Binding DatePublication}"
+                                                    Width="*"/>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_PageCount}"
+                                                    Binding="{Binding DetailsLivre.NombrePages}"
+                                                    Width="*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+
+                    <!-- Boutons Livres -->
+                    <StackPanel Grid.Row="2"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Margin="{StaticResource Space.SM}">
+                        <Button x:Name="btnAjouterLiv"
+                                Content="{DynamicResource Btn_Add}"
+                                MinWidth="120"
+                                Click="btnAjouterLiv_Click"/>
+                        <Button x:Name="btnModifierLiv"
+                                Content="{DynamicResource Btn_Edit}"
+                                MinWidth="120"
+                                Click="btnModifierLiv_Click"/>
+                        <Button x:Name="btnSupprimerLiv"
+                                Content="{DynamicResource Btn_Delete}"
+                                MinWidth="120"
+                                Click="btnSupprimerLiv_Click"/>
+                        <Button x:Name="btnRechercherLiv"
+                                Content="{DynamicResource Btn_Search}"
+                                MinWidth="120"
+                                Click="btnRechercherLiv_Click"/>
+                        <Button x:Name="btnViderLiv"
+                                Content="{DynamicResource Btn_Clear}"
+                                MinWidth="120"
+                                Click="btnViderLiv_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <!-- ==================== AUTEURS ==================== -->
+            <TabItem Header="{DynamicResource Tab_Auteurs}" x:Name="tabAuteurs">
+                <Grid Margin="{StaticResource Space.SM}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Formulaire -->
+                    <Border Grid.Row="0" Style="{StaticResource Card}">
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="{DynamicResource Lbl_LastName}" Width="120"/>
+                                <TextBox x:Name="tbNomAut" Width="260"/>
+
+                                <Label Content="{DynamicResource Lbl_FirstName}" Width="120" Margin="16,0,8,0"/>
+                                <TextBox x:Name="tbPrenomAut" Width="260"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="{DynamicResource Lbl_BookCount}" Width="120"/>
+                                <TextBox x:Name="tbNbrAut" Width="120"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Tableau -->
+                    <Border Grid.Row="1" Style="{StaticResource Card}">
+                        <DataGrid x:Name="dgAuteurs"
+                                  AutoGenerateColumns="False"
+                                  CanUserAddRows="False"
+                                  CanUserDeleteRows="False"
+                                  IsReadOnly="True"
+                                  SelectionMode="Single"
+                                  SelectionChanged="dgAuteurs_SelectionChanged">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_LastName}"
+                                    Binding="{Binding Nom}"
+                                    Width="2*"/>
+
+                                <DataGridTextColumn Header="{DynamicResource Lbl_FirstName}"
+                                    Binding="{Binding Prenom}"
+                                    Width="2*"/>
+
+                                <DataGridTextColumn Header="{DynamicResource Lbl_BookCount}"
+                                    Binding="{Binding NombreLivres}"
+                                    Width="*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+
+                    <!-- Boutons -->
+                    <StackPanel Grid.Row="2"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Margin="{StaticResource Space.SM}">
+                        <Button x:Name="btnAjouterAut"
+                                Content="{DynamicResource Btn_Add}"
+                                MinWidth="120"
+                                Click="btnAjouterAut_Click"/>
+                        <Button x:Name="btnModifierAut"
+                                Content="{DynamicResource Btn_Edit}"
+                                MinWidth="120"
+                                Click="btnModifierAut_Click"/>
+                        <Button x:Name="btnSupprimerAut"
+                                Content="{DynamicResource Btn_Delete}"
+                                MinWidth="120"
+                                Click="btnSupprimerAut_Click"/>
+                        <Button x:Name="btnRechercherAut"
+                                Content="{DynamicResource Btn_Search}"
+                                MinWidth="120"
+                                Click="btnRechercherAut_Click"/>
+                        <Button x:Name="btnViderAut"
+                                Content="{DynamicResource Btn_Clear}"
+                                MinWidth="120"
+                                Click="btnViderAut_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <!-- ==================== CATÉGORIES ==================== -->
+            <TabItem Header="{DynamicResource Tab_Categories}" x:Name="tabCategories">
+                <Grid Margin="{StaticResource Space.SM}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Formulaire -->
+                    <Border Grid.Row="0" Style="{StaticResource Card}">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{DynamicResource Lbl_CategoryName}" Width="160"/>
+                            <TextBox x:Name="tbNomCat" Width="260"/>
+
+                            <Label Content="{DynamicResource Lbl_CategoryBookCount}" Width="200" Margin="16,0,8,0"/>
+                            <TextBox x:Name="tbNbrCat" Width="120"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Tableau -->
+                    <Border Grid.Row="1" Style="{StaticResource Card}">
+                        <DataGrid x:Name="dgCategories"
+                                  AutoGenerateColumns="False"
+                                  CanUserAddRows="False"
+                                  CanUserDeleteRows="False"
+                                  IsReadOnly="True"
+                                  SelectionMode="Single"
+                                  SelectionChanged="dgCategories_SelectionChanged">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="{DynamicResource Lbl_CategoryName}"
+                                    Binding="{Binding Nom}"
+                                    Width="2*"/>
+
+                                <DataGridTextColumn Header="{DynamicResource Lbl_CategoryBookCount}"
+                                    Binding="{Binding NombreLivres}"
+                                    Width="*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+
+                    <!-- Boutons -->
+                    <StackPanel Grid.Row="2"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Margin="{StaticResource Space.SM}">
+                        <Button x:Name="btnAjouterCatg"
+                                Content="{DynamicResource Btn_Add}"
+                                MinWidth="120"
+                                Click="btnAjouterCatg_Click"/>
+                        <Button x:Name="btnModifierCatg"
+                                Content="{DynamicResource Btn_Edit}"
+                                MinWidth="120"
+                                Click="btnModifierCatg_Click"/>
+                        <Button x:Name="btnSupprimerCatg"
+                                Content="{DynamicResource Btn_Delete}"
+                                MinWidth="120"
+                                Click="btnSupprimerCatg_Click"/>
+                        <Button x:Name="btnRechercherCatg"
+                                Content="{DynamicResource Btn_Search}"
+                                MinWidth="120"
+                                Click="btnRechercherCatg_Click"/>
+                        <Button x:Name="btnViderCatg"
+                                Content="{DynamicResource Btn_Clear}"
+                                MinWidth="120"
+                                Click="btnViderCatg_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+        <StatusBar Grid.Row="2" Background="#EEE" Padding="6">
+            <StatusBarItem>
+                <TextBlock x:Name="sbStatus" Text="Ready." FontWeight="SemiBold"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+
+</Window>

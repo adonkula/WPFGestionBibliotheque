@@ -1,0 +1,36 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!-- Tabs -->
+    <sys:String x:Key="Tab_DetailLivres">Book details</sys:String>
+    <sys:String x:Key="Tab_Livres">Books</sys:String>
+    <sys:String x:Key="Tab_Auteurs">Authors</sys:String>
+    <sys:String x:Key="Tab_Categories">Categories</sys:String>
+
+    <!-- Generic labels -->
+    <sys:String x:Key="Lbl_Language">Language:</sys:String>
+    <sys:String x:Key="Lbl_Title">Title:</sys:String>
+    <sys:String x:Key="Lbl_Author">Author:</sys:String>
+    <sys:String x:Key="Lbl_Category">Category:</sys:String>
+    <sys:String x:Key="Lbl_ISBN">ISBN:</sys:String>
+    <sys:String x:Key="Lbl_PubDate">Publication date:</sys:String>
+    <sys:String x:Key="Lbl_PageCount">Page count:</sys:String>
+
+    <!-- Authors -->
+    <sys:String x:Key="Lbl_LastName">Last name:</sys:String>
+    <sys:String x:Key="Lbl_FirstName">First name:</sys:String>
+    <sys:String x:Key="Lbl_BookCount">Number of books:</sys:String>
+
+    <!-- Categories -->
+    <sys:String x:Key="Lbl_CategoryName">Name:</sys:String>
+    <sys:String x:Key="Lbl_CategoryBookCount">Number of associated books:</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="Btn_Add">Add</sys:String>
+    <sys:String x:Key="Btn_Edit">Edit</sys:String>
+    <sys:String x:Key="Btn_Delete">Delete</sys:String>
+    <sys:String x:Key="Btn_Search">Search</sys:String>
+    <sys:String x:Key="Btn_Clear">Clear</sys:String>
+</ResourceDictionary>

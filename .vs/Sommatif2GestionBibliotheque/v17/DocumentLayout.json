@@ -1,0 +1,216 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|d:\\programmingprojects\\appli bureau c#\\sommatif2gestionbibliotheque\\sommatif2gestionbibliotheque\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|solutionrelative:sommatif2gestionbibliotheque\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|d:\\programmingprojects\\appli bureau c#\\sommatif2gestionbibliotheque\\sommatif2gestionbibliotheque\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|solutionrelative:sommatif2gestionbibliotheque\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|d:\\programmingprojects\\appli bureau c#\\sommatif2gestionbibliotheque\\sommatif2gestionbibliotheque\\resources\\strings.fr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|solutionrelative:sommatif2gestionbibliotheque\\resources\\strings.fr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|d:\\programmingprojects\\appli bureau c#\\sommatif2gestionbibliotheque\\sommatif2gestionbibliotheque\\services\\bibliothequeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|solutionrelative:sommatif2gestionbibliotheque\\services\\bibliothequeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|d:\\programmingprojects\\appli bureau c#\\sommatif2gestionbibliotheque\\sommatif2gestionbibliotheque\\resources\\strings.en.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|solutionrelative:sommatif2gestionbibliotheque\\resources\\strings.en.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|d:\\programmingprojects\\appli bureau c#\\sommatif2gestionbibliotheque\\sommatif2gestionbibliotheque\\models\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|solutionrelative:sommatif2gestionbibliotheque\\models\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|d:\\programmingprojects\\appli bureau c#\\sommatif2gestionbibliotheque\\sommatif2gestionbibliotheque\\models\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|solutionrelative:sommatif2gestionbibliotheque\\models\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|d:\\programmingprojects\\appli bureau c#\\sommatif2gestionbibliotheque\\sommatif2gestionbibliotheque\\models\\auteur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|solutionrelative:sommatif2gestionbibliotheque\\models\\auteur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|d:\\programmingprojects\\appli bureau c#\\sommatif2gestionbibliotheque\\sommatif2gestionbibliotheque\\models\\dbcontextbibliotheque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|solutionrelative:sommatif2gestionbibliotheque\\models\\dbcontextbibliotheque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|d:\\programmingprojects\\appli bureau c#\\sommatif2gestionbibliotheque\\sommatif2gestionbibliotheque\\models\\livrecategorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|solutionrelative:sommatif2gestionbibliotheque\\models\\livrecategorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|d:\\programmingprojects\\appli bureau c#\\sommatif2gestionbibliotheque\\sommatif2gestionbibliotheque\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|solutionrelative:sommatif2gestionbibliotheque\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|d:\\programmingprojects\\appli bureau c#\\sommatif2gestionbibliotheque\\sommatif2gestionbibliotheque\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735D4787-92DC-400E-9AB9-518AB59D3394}|Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque.csproj|solutionrelative:sommatif2gestionbibliotheque\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Livre.cs",
+              "DocumentMoniker": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Models\\Livre.cs",
+              "RelativeDocumentMoniker": "Sommatif2GestionBibliotheque\\Models\\Livre.cs",
+              "ToolTip": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Models\\Livre.cs",
+              "RelativeToolTip": "Sommatif2GestionBibliotheque\\Models\\Livre.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T20:40:55.059Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Categorie.cs",
+              "DocumentMoniker": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Models\\Categorie.cs",
+              "RelativeDocumentMoniker": "Sommatif2GestionBibliotheque\\Models\\Categorie.cs",
+              "ToolTip": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Models\\Categorie.cs",
+              "RelativeToolTip": "Sommatif2GestionBibliotheque\\Models\\Categorie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:56:06.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Auteur.cs",
+              "DocumentMoniker": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Models\\Auteur.cs",
+              "RelativeDocumentMoniker": "Sommatif2GestionBibliotheque\\Models\\Auteur.cs",
+              "ToolTip": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Models\\Auteur.cs",
+              "RelativeToolTip": "Sommatif2GestionBibliotheque\\Models\\Auteur.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T18:59:57.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Sommatif2GestionBibliotheque\\MainWindow.xaml",
+              "ToolTip": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\MainWindow.xaml",
+              "RelativeToolTip": "Sommatif2GestionBibliotheque\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-12T18:44:09.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Sommatif2GestionBibliotheque\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Sommatif2GestionBibliotheque\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAEUCAAAAAAAAAAAswE0CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T18:44:07.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BibliothequeService.cs",
+              "DocumentMoniker": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Services\\BibliothequeService.cs",
+              "RelativeDocumentMoniker": "Sommatif2GestionBibliotheque\\Services\\BibliothequeService.cs",
+              "ToolTip": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Services\\BibliothequeService.cs",
+              "RelativeToolTip": "Sommatif2GestionBibliotheque\\Services\\BibliothequeService.cs",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAuwBEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T21:04:12.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Strings.fr.xaml",
+              "DocumentMoniker": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Resources\\Strings.fr.xaml",
+              "RelativeDocumentMoniker": "Sommatif2GestionBibliotheque\\Resources\\Strings.fr.xaml",
+              "ToolTip": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Resources\\Strings.fr.xaml",
+              "RelativeToolTip": "Sommatif2GestionBibliotheque\\Resources\\Strings.fr.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T18:59:45.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Strings.en.xaml",
+              "DocumentMoniker": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Resources\\Strings.en.xaml",
+              "RelativeDocumentMoniker": "Sommatif2GestionBibliotheque\\Resources\\Strings.en.xaml",
+              "ToolTip": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Resources\\Strings.en.xaml",
+              "RelativeToolTip": "Sommatif2GestionBibliotheque\\Resources\\Strings.en.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T19:00:30.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DbContextBibliotheque.cs",
+              "DocumentMoniker": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Models\\DbContextBibliotheque.cs",
+              "RelativeDocumentMoniker": "Sommatif2GestionBibliotheque\\Models\\DbContextBibliotheque.cs",
+              "ToolTip": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Models\\DbContextBibliotheque.cs",
+              "RelativeToolTip": "Sommatif2GestionBibliotheque\\Models\\DbContextBibliotheque.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T18:56:12.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LivreCategorie.cs",
+              "DocumentMoniker": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Models\\LivreCategorie.cs",
+              "RelativeDocumentMoniker": "Sommatif2GestionBibliotheque\\Models\\LivreCategorie.cs",
+              "ToolTip": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\Models\\LivreCategorie.cs",
+              "RelativeToolTip": "Sommatif2GestionBibliotheque\\Models\\LivreCategorie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T20:43:36.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Sommatif2GestionBibliotheque\\App.xaml.cs",
+              "ToolTip": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\App.xaml.cs",
+              "RelativeToolTip": "Sommatif2GestionBibliotheque\\App.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:22:55.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\App.xaml",
+              "RelativeDocumentMoniker": "Sommatif2GestionBibliotheque\\App.xaml",
+              "ToolTip": "D:\\ProgrammingProjects\\Appli Bureau C#\\Sommatif2GestionBibliotheque\\Sommatif2GestionBibliotheque\\App.xaml",
+              "RelativeToolTip": "Sommatif2GestionBibliotheque\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-12T18:44:50.917Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
